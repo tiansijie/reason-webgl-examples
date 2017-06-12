@@ -10,8 +10,7 @@ let gl = document
     |> andThenGL CanvasElement.getContextWebGl;
 
 
-WebGl.clearColor gl 0.0 0.8 0.0 1.0;
-/* WebGl.clear gl WebGl._COLOR_BUFFER_BIT; */
+WebGl.clearColor gl 0.0 0.0 0.0 1.0;
 
 let vertexPosBuffer = WebGl.createBuffer gl;
 WebGl.bindBuffer gl WebGl._ARRAY_BUFFER vertexPosBuffer;

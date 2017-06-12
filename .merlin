@@ -1,10 +1,10 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx /Users/sijietian/Documents/code/reason-three/node_modules/bs-platform/bin/bsppx.exe
-S /Users/sijietian/Documents/code/reason-three/node_modules/bs-platform/lib/ocaml
-B /Users/sijietian/Documents/code/reason-three/node_modules/bs-platform/lib/ocaml
+FLG -ppx /Users/sijietian/Documents/code/reason-webgl-examples/node_modules/bs-platform/bin/bsppx.exe
+S /Users/sijietian/Documents/code/reason-webgl-examples/node_modules/bs-platform/lib/ocaml
+B /Users/sijietian/Documents/code/reason-webgl-examples/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
-S /Users/sijietian/Documents/code/reason-three/node_modules/bs-webapi/lib/ocaml
-B /Users/sijietian/Documents/code/reason-three/node_modules/bs-webapi/lib/ocaml
+S /Users/sijietian/Documents/code/reason-webgl-examples/node_modules/bs-webapi/lib/ocaml
+B /Users/sijietian/Documents/code/reason-webgl-examples/node_modules/bs-webapi/lib/ocaml
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}
