@@ -1,0 +1,21 @@
+{
+  "name": "reason-webgl-examples",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "build-web": "webpack",
+    "build-web-watch": "webpack -w -p"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bs-platform": "^1.7.4",
+    "bs-webapi": "git+https://github.com/BuckleTypes/bs-webapi-incubator.git"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
