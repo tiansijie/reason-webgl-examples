@@ -4,11 +4,9 @@ open Bs_webapi.Dom;
 let andThenGL (f: 'a => Bs_webapi.Canvas.WebGl.glT) => fun
 | Some v => f v;
 
-
 let gl = document
     |> Document.getElementById "reason-webgl"
     |> andThenGL CanvasElement.getContextWebGl;
-
 
 WebGl.clearColor gl 0.0 0.0 0.0 1.0;
 
@@ -30,7 +28,6 @@ WebGl.compileShader gl vertexShader;
 
 WebGl.shaderSource gl fragShader fs;
 WebGl.compileShader gl fragShader;
-
 
 WebGl.attachShader gl program vertexShader;
 WebGl.attachShader gl program fragShader;
