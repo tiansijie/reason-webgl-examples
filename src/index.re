@@ -17,8 +17,8 @@ WebGl.bindBuffer gl WebGl._ARRAY_BUFFER vertexPosBuffer;
 let vertices = Js.Typed_array.Float32Array.make [|-0.5, -0.5, 0.5, -0.5, 0.0, 0.5|];
 WebGl.bufferFloatData gl WebGl._ARRAY_BUFFER vertices WebGl._STATIC_DRAW;
 
-let vs = "\n attribute vec2 pos; \n void main() {\n gl_Position = vec4(pos, 0, 1);\n }";
-let fs = "\n precision mediump float;\n void main() {\n gl_FragColor = vec4(0, 0.8, 0, 1);\n }";
+let vs = "attribute vec2 pos; void main() {gl_Position = vec4(pos, 0, 1);}";
+let fs = "precision mediump float; void main() {gl_FragColor = vec4(0, 0.8, 0, 1);}";
 let program = WebGl.createProgram gl;
 
 let vertexShader = WebGl.createShader gl WebGl._VERTEX_SHADER;
