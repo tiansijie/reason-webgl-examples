@@ -2,7 +2,8 @@ open Bs_webapi.Canvas;
 open Bs_webapi.Dom;
 
 let andThenGL (f: 'a => Bs_webapi.Canvas.WebGl.glT) => fun
-| Some v => f v;
+| Some v => f v
+| None => raise (Invalid_argument "Passed `None` to andThenGL");
 
 let gl = document
     |> Document.getElementById "reason-webgl"
